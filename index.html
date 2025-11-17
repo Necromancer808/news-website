@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Deutsch Aktuell — Nachrichten</title>
+  <meta name="description" content="Seriöse Nachrichtenseite mit Artikel: Zocken ist gut für den Körper">
+  <style>
+    :root{
+      --bg:#f6f7f9; --card:#ffffff; --accent:#0b5cff; --muted:#586069; --maxw:900px;
+      --serif: 'Georgia', 'Times New Roman', serif; --sans: 'Arial', sans-serif;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--bg);font-family:var(--sans);color:#111}
+    header{background:white;border-bottom:1px solid #e6e9ee}
+    .container{max-width:var(--maxw);margin:0 auto;padding:24px}
+    .brand{display:flex;align-items:center;gap:12px}
+    .logo{width:48px;height:48px;border-radius:6px;background:linear-gradient(135deg,var(--accent),#1b9cff);display:flex;align-items:center;justify-content:center;color:white;font-weight:700}
+    nav{margin-left:auto}
+    nav a{color:var(--muted);text-decoration:none;margin-left:18px;font-size:15px}
+    .hero{display:grid;grid-template-columns:1fr;gap:20px;padding:28px 0}
+    .article-card{background:var(--card);padding:28px;border-radius:10px;box-shadow:0 6px 18px rgba(11,92,255,0.04)}
+    .kicker{font-size:13px;color:var(--accent);font-weight:700}
+    h1{font-family:var(--serif);margin:6px 0 8px;font-size:28px}
+    .byline{color:var(--muted);font-size:14px;margin-bottom:18px}
+    .lead{font-size:17px;line-height:1.5;color:#212121;margin-bottom:18px}
+    article p{line-height:1.6;margin:12px 0;color:#222}
+    .image-placeholder{width:100%;height:300px;background:linear-gradient(180deg,#e9eefc,#f6f8ff);border-radius:8px;display:flex;align-items:center;justify-content:center;color:#6b7aa8}
+    footer{padding:20px 0;color:var(--muted);font-size:14px;text-align:center}
+    .sources{margin-top:20px;padding:12px;border-left:3px solid #eee;background:#fbfcff}
+    @media(min-width:900px){.hero{grid-template-columns:1fr;}}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container" style="display:flex;align-items:center;">
+      <div class="brand">
+        <div class="logo">DA</div>
+        <div>
+          <div style="font-weight:700;font-size:18px">Deutsch Aktuell</div>
+          <div style="font-size:12px;color:var(--muted)">Unabhängige Berichterstattung</div>
+        </div>
+      </div>
+      <nav aria-label="Hauptnavigation">
+        <a href="#">Start</a>
+        <a href="#">Wirtschaft</a>
+        <a href="#">Wissenschaft</a>
+        <a href="#">Gesundheit</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="article-card" role="article" aria-labelledby="article-title">
+        <div class="kicker">WISSENSCHAFT & GESELLSCHAFT</div>
+        <h1 id="article-title">Warum Videospiele dem Körper helfen können</h1>
+        <div class="byline">Von Lina Becker · 17. November 2025 · Beitrag</div>
+        <p class="lead">Videospiele sind nicht nur Unterhaltung: Studien und Expertinnen deuten darauf hin, dass richtiges, moderates Gaming körperliche Vorteile haben kann — von besserer Feinmotorik bis zu mehr Bewegung bei aktiven Spielen.</p>
+
+        <img src="zocken.jpg" alt="Spieler mit Bewegungssensoren" style="width:100%; height:auto; border-radius:8px;">
+
+
+        <article>
+          <p>In den letzten Jahren hat die Forschung gezeigt, dass bestimmte Formen des Spielens positive Effekte auf den Körper haben können. Besonders aktive Spiele (z. B. Tanz- oder Fitnessspiele, VR-Anwendungen) fördern Ausdauer und Koordination, weil sie Bewegungen und Ganzkörperaktivität erfordern.</p>
+
+          <p>Auch klassische Videospiele tragen zur körperlichen Fitness bei: Reaktions- und Präzisionsanforderungen trainieren Feinmotorik und Hand-Auge-Koordination. Spielerinnen und Spieler berichten häufig von verbesserter Fingerfertigkeit und schnellerer Reaktion, die sich auch in Alltagstätigkeiten positiv auswirken können.</p>
+
+          <p>Ein weiterer Aspekt ist die Kombination aus körperlicher Aktivität und sozialer Interaktion. Multiplayer- und Fitness-Communities motivieren viele dazu, regelmäßiger aktiv zu sein — das kann helfen, Bewegung in den Alltag zu integrieren.</p>
+
+          <p>Wichtig ist Moderation: Übermäßiges Sitzen und Bildschirmzeit birgt Risiken. Empfehlungen lauten: Pausen einlegen, auf ergonomische Sitzposition achten und aktive Spiele in die Routine einbauen.</p>
+
+          <div class="sources">
+            <strong>Quellen & Hinweise:</strong>
+            <ul>
+              <li>Wissenschaftliche Studien zur Wirkung von exergames (aktive Spiele) und VR-Fitness.</li>
+              <li>Ergonomie- und Pausenempfehlungen von Gesundheitsorganisationen.</li>
+            </ul>
+            <p style="margin-top:8px;color:var(--muted);font-size:13px">Hinweis: Dieser Artikel fasst Forschungsansätze zusammen und ersetzt keine medizinische Beratung.</p>
+          </div>
+
+        </article>
+
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      © Deutsch Aktuell — Quelle: Eigene Recherchen
+    </div>
+  </footer>
+</body>
+</html>
